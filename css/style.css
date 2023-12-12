@@ -592,9 +592,26 @@ header .typing {
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
 }
 
+.progress-bar {
+    width: 0;
+}
+
+body:has(.about.active) .about .one {
+    width: 85%;
+}
+
+body:has(.about.active) .about .two {
+    width: 80%;
+}
+
+body:has(.about.active) .about .three {
+    width: 95%;
+}
+
 .about .progress .progress-bar {
     --bs-progress-bar-bg: var(--main-color);
     border-radius: 0.375rem;
+    transition: all 1s;
 }
 
 a.bt {
