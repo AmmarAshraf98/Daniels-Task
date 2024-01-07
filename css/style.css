@@ -1,3 +1,4 @@
+/* Global */
 :root {
     --main-color: #1c1c1c;
     --second-color: #343434;
@@ -143,8 +144,11 @@ body:has(.home.active) .navbar {
     color: #fff !important;
 }
 
-body:has(.home.active) .navbar .navbar-brand,
-body:has(.home.active) .navbar .nav-link {
+body:has(.home.active) .navbar-collapse ul li a {
+    color: #fff;
+}
+
+body:has(.home.active) .navbar .navbar-brand {
     color: #fff !important;
 }
 
@@ -214,6 +218,7 @@ nav .navbar-toggler i {
 body:has(.home.active) .navbar-toggler i {
     color: #fff !important;
 }
+
 
 /* <!--    ----        Start Header Section   -----  )=> --> */
 header {
@@ -538,9 +543,6 @@ header .typing {
 }
 
 
-
-
-
 /* <!--    ----        Start About Section   -----  )=> --> */
 .about .about-img {
     position: relative;
@@ -596,15 +598,15 @@ header .typing {
     width: 0;
 }
 
-body:has(.about.active) .about .one {
+body:not(:has(.home.active)) .about .one {
     width: 85%;
 }
 
-body:has(.about.active) .about .two {
+body:not(:has(.home.active)) .about .two {
     width: 80%;
 }
 
-body:has(.about.active) .about .three {
+body:not(:has(.home.active)) .about .three {
     width: 95%;
 }
 
@@ -641,8 +643,6 @@ a.bt {
     color: #fff;
     background-color: var(--main-color);
 }
-
-
 
 
 
@@ -698,7 +698,6 @@ a.bt {
 
 
 /* <!--    ----        Start Portfolio Section   -----  )=> --> */
-
 #portfolio .portfolio-nav {
     background-color: white;
     box-shadow: none;
@@ -875,8 +874,6 @@ a.bt {
 
 
 
-
-
 /* <!--    ----        Start Counter Section   -----  )=> --> */
 #counter .count {
     text-align: center;
@@ -896,8 +893,6 @@ a.bt {
     font-weight: 600;
     margin-bottom: 30px;
 }
-
-
 
 
 
@@ -975,8 +970,6 @@ a.bt {
     font-weight: bold;
     text-transform: uppercase;
 }
-
-
 
 
 /* <!--    ----        Start contact us. Section   -----  )=> --> */
